@@ -28,10 +28,13 @@
 
 #### 1.数组元素访问方式
 
-    //string种的所有元素可通过数组下标的形式访问
-    sting s = "test";
-    print(s[1]);
-    //输出：e
+```cpp  
+//string种的所有元素可通过数组下标的形式访问
+sting s = "test";
+print(s[1]);
+//输出：e  
+```
+
 #### 2.size()和length()
     #include<iostream>
     #include<string>
