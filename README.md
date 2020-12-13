@@ -6,7 +6,7 @@
 >注意：如果对空文本输入退格字符，文本继续为空。
 
 官方解答给出了这样一段代码：
-    
+```cpp   
     class Solution {
     public:
         bool backspaceCompare(string S, string T) {
@@ -25,7 +25,7 @@
             return ret;
         }
     };
-
+```
 #### 1.数组元素访问方式
 
 ```cpp  
