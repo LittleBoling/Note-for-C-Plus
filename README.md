@@ -7,24 +7,24 @@
 
 官方解答给出了这样一段代码：
 ```cpp   
-    class Solution {
-    public:
-        bool backspaceCompare(string S, string T) {
-            return build(S) == build(T);
-        }
+class Solution {
+public:
+    bool backspaceCompare(string S, string T) {
+        return build(S) == build(T);
+    }
 
-        string build(string str) {
-            string ret;
-            for (char ch : str) {
-                if (ch != '#') {
-                    ret.push_back(ch);
-                } else if (!ret.empty()) {
-                    ret.pop_back();
-                }
-            }
-            return ret;
-        }
-    };
+    string build(string str) {
+         string ret;
+         for (char ch : str) {
+             if (ch != '#') {
+                ret.push_back(ch);
+             } else if (!ret.empty()) {
+                ret.pop_back();
+             }
+         }
+         return ret;
+    }
+};
 ```
 #### 1.数组元素访问方式
 
