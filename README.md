@@ -1,6 +1,6 @@
 # Note-for-C-Plus
 ## 2020年12月13日学习笔记
-### String 用法小结  
+### String 用法小结 
 对string类的思考源于最近做的leetcode中栈相关的题目，针对844题  
 >给定 S 和 T 两个字符串，当它们分别被输入到空白的文本编辑器后，判断二者是否相等，并返回结果。 # 代表退格字符。
 >注意：如果对空文本输入退格字符，文本继续为空。
@@ -121,3 +121,36 @@ printf("(find_first_of()):字母h在母串中的位置为:%d\n", index);
 printf("(find_last_of()):字母h在母串中的位置为:%d", index1);
 ```
 #### 13. 除此之外还有string.back()/string.front()等返回最后一个元素和第一个元素的用法。
+
+## 2020年12月17日学习笔记
+### Vector 用法小结 
+对Vector类的思考源于最近做的leetcode中栈相关的题目，针对1441题
+>给你一个目标数组 target 和一个整数 n。每次迭代，需要从  list = {1,2,3..., n} 中依序读取一个数字。
+>
+>请使用下述操作来构建目标数组 target ：
+>
+>Push：从 list 中读取一个新元素， 并将其推入数组中。  
+>Pop：删除数组中的最后一个元素。  
+>如果目标数组构建完成，就停止读取更多元素。  
+>题目数据保证目标数组严格递增，并且只包含 1 到 n 之间的数字。
+>
+>请返回构建目标数组所用的操作序列。
+>
+>题目数据保证答案是唯一的。
+  
+vector属于序列式容器(sequential containers)这个大类,可访问的形式有：
+```cpp
+iterator vector.begin(); //返回数组第一个元素的位置
+iterator vector.end(); //返回数组最后一个元素的位置
+size_type vector.size(); //获取数组大小
+size_type vector.capacity(); //获取数组剩余容量
+reference vector.front(); //访问数组的第一个元素
+reference vector.back(); //访问数组的最后一个元素
+vector.push_back(const T& x); //向数组的末尾压入一个新元素
+vercot.pop_back(); //弹出最后一个元素
+iterator vertor.erase(iterator position); // 清楚位于position位置的元素并返回position
+vector.clear(); //清楚所有元素
+vector.resize(); //重定义容器大小，小于当前容量时会截断
+vector.insert(iterator position, size_type n, const T& x); //在指定位置插入n个x元素
+bool vector.empty(); //判断是否为空
+```
