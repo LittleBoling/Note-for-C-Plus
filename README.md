@@ -153,4 +153,8 @@ vector.clear(); //清楚所有元素
 vector.resize(); //重定义容器大小，小于当前容量时会截断
 vector.insert(iterator position, size_type n, const T& x); //在指定位置插入n个x元素
 bool vector.empty(); //判断是否为空
+vector.emplace_back(); //emplace为C++11中的新增方法
 ```
+## 2021年1月26日 Linux高性能服务器编程
+####1.SIGTERM信号
+SIGTERM信号是一个类似于中断的设置，可由外部触发，但具体机制还不清楚
