@@ -156,5 +156,27 @@ bool vector.empty(); //判断是否为空
 vector.emplace_back(); //emplace为C++11中的新增方法
 ```
 ## 2021年1月26日 Linux高性能服务器编程
-####1.SIGTERM信号
+#### 1.SIGTERM信号
 SIGTERM信号是一个类似于中断的设置，可由外部触发，但具体机制还不清楚
+
+## 2021年2月5日 
+#### 1.Effictive C++ 条款03  
+在进行Linux编程和c++特性的学习过程中，都出现了使用char* 指针代替字符串的样式  
+```cpp
+char greet[] = "Hello";
+char* p = greet;
+
+const char* p = greet;
+char* const p  = greet;
+```  
+这说明字符串是一段连续的内存，只需要指定头指针的位置就可以确定字符串的位置   
+#### 2.linux Network Program    
+* writev函数  
+* sendfile函数   
+#### 3.Data Structure
+常见的stl必须有个大体的印象，甚至hashmap的实现也需要有个数，stl必须熟练运用   
+* 堆排序：大顶堆和小顶堆使用priority_queue实现, 该标准库函数的使用以vector为基础，队列中的数据为有序数据，排序方式由第三个参数决定，无迭代器。  
+* 还可以使用set排序：std::multiset允许有多个相同的元素 http://www.cplusplus.com/reference/set/multiset/?kw=multiset  
+#### 4.InterView  
+* java为单继承，C++为多继承   
+* 虚函数表的概念
