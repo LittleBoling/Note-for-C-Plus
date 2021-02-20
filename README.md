@@ -180,3 +180,18 @@ char* const p  = greet;
 #### 4.InterView  
 * java为单继承，C++为多继承   
 * 虚函数表的概念
+
+## 2021年2月6日
+#### 1.Data Struct  
+* sort函数存在于algorithm中，是c++的内置排序函数，详见 http://www.cplusplus.com/reference/algorithm/sort/?kw=sort  
+
+## 2021年2月19日
+#### 1.InterView add
+* constexpr和常量表达式  
+```cpp
+const int sz = get_size();//正确，但sz直到运行时才能获取具体值，因此它不是个常量表达式
+```
+* 显式调用this指针的情况：1.类的非静态成员函数返回值为对象本身时; 2.类的链式调用时; 3.类成员变量和函数参数重名时  
+* inline内联函数：函数将在被调用处直接展开  
+#### 2.Data Structure
+* 丑数/质数因数类问题，使用优先队列或k指针法解决
